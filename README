@@ -1,0 +1,39 @@
+#Subject is Mars Rover Code Challenge.pdf
+
+PROGRAM USAGE:
+To run this program, you must have python3 installed on your machine
+Run python3 Rover.py
+Type the first line of input (Two space seperated positive numbers greater than zero) and press Enter
+Type the second line of input (A positive digit, space, another positive digit, space and a Compass Direction i.e N, E, W, or S) and press Enter
+Type the third and final line of input (should be commands M, L, or R. the commands can be repeated) and press Enter
+There are multiple test cases in the file "tests" that you could use, ignore all comment lines that begin with a # in the file
+Example:
+>$ python3 Rover.py 
+8 10
+1 2 E
+RR
+
+output:
+1 2 W
+
+DESCRIPTION OF THE DESIGN AND DECISIONS MADE:
+The program has two classes, the Rover and the HeadQuarters HQ class.
+HQ has a rover and controls the rover.
+The control method in HQ controls the rover and returns the rover position on mars.
+The rover receives input through it's method getUserInput, validates it and records it.
+The rover then executes the commands in the third line of input through the method survey
+
+Considering the Directions, North, East, South and West, they are 90 degrees away from one another in that order,
+the rotation method therefore implements these directions intead of the actual figures 90, 180, 270 and 360.
+
+The rover can only survey within the bounds of the zone prescribed. Therefore, the increase and decrease in the x and y coordinates of the rover's p
+osition is limited to the zone size, 0 left, and 0 down.
+
+The second line of input must consist of two space seperated numbers and a direction as discussed with Greg on the platform.
+
+Because the zone is on a cartesian plane, x coordinates increase towards the right and the y coordinates increase upwards.
+
+Coordinates are integers so numbers in start position are type-cast to int in the program
+
+
+PLEASE LEAVE A COMMENT. I VALUE YOUR INPUT
